@@ -7,9 +7,9 @@ Just download the SparkneyDance30.jar file and put it in your calss path.
 # How to begin
 The quickest way to try it out, just fire up a JSP-page and do some dancing.
 
-```java
-<%@page import="com.sparkney.dance.core.*"%>
-<%@page import="com.sparkney.dance.gui.base.*"%>
+```
+<%@page import="com.sparkney.dance.core.*" %>
+<%@page import="com.sparkney.dance.gui.base.*" %>
 
 <%
 
