@@ -5,7 +5,7 @@ Dance is an open architecture for developing web applicatoins i pure Java.
 Just download the SparkneyDance30.jar file and put it in your calss path.
 
 # How to begin
-The quickest way to try it out, just fire up a JSP-page and do the dance.
+The quickest way to try it out, just fire up a JSP-page and do some dancing.
 
 ```jsp
 <%@page import="com.sparkney.dance.core.*"%>
@@ -25,7 +25,7 @@ windowPanel.render(context);
 ```
 
 
-# Code example
+# Code examples
 
 ```java
 //A simle example, just to see how i works.
