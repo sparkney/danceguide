@@ -1,7 +1,32 @@
 # What is Dance
 Dance is an open architecture for developing web applicatoins i pure Java.
 
-## Code example
+# Installation
+Just download the SparkneyDance30.jar and put in in your calss path.
+
+# How to begin
+The quickest way to try it out, just fire up a JSP-page and do the dance.
+
+
+<%@page import="com.sparkney.dance.core.*" %>
+<%@page import="com.sparkney.dance.gui.base.*" %>
+
+```java
+<%
+
+Text text = new Text("This is a dance component.");
+
+WindowPanel windowPanel = new WindowPanel();
+windowPanel.setContent(text);
+
+ComponentContext context = new ComponentContext(request, response);
+windowPanel.render(context);
+
+%>
+```
+
+
+# Code example
 
 ```java
 //A simle example, just to see how i works.
