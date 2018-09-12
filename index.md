@@ -29,6 +29,7 @@ windowPanel.setContent(layout);
 windowPanel.render(context);
 
 ```
+[See the result](simple_example.html)
 
 ```java
 //A more complex and responsive example
@@ -64,4 +65,4 @@ WindowPanel windowPanel = new WindowPanel();
 windowPanel.setContent(centerLayout);
 windowPanel.render(context);
 ```
-
+[See the result](complex_example.html)
