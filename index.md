@@ -2,7 +2,7 @@
 Dance is an open architecture for developing web applicatoins i pure Java.
 
 # Installation
-Just download the SparkneyDance30.jar and put in in your calss path.
+Just download the SparkneyDance30.jar file and put it in your calss path.
 
 # How to begin
 The quickest way to try it out, just fire up a JSP-page and do the dance.
