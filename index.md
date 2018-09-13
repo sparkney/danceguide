@@ -24,6 +24,9 @@ Dance is an open component based architecture for developing web applicatoins in
 * Ideally, future proof, since applications code is not dependent on underlying technology.
 * Possibility to use all features in advanced IDEs, like auto-completion and auto-refactoring.
 
+# Installation prerequisites
+A Java EE servlet-container server, like Tomcat, Jetty, GlassFish, JBoss, WebLogic, etc.
+
 # Installation
 Just download the SparkneyDance30.jar file and put it in your calss path. TODO:Link
 
