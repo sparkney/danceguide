@@ -1,5 +1,5 @@
 # What is Dance?
-Dance is pure Java web development.
+Pure Java web development.
 
 Dance is an open source, very simple, yet powerful, component based architecture and implementation for developing web applicatoins in pure Java.
 
@@ -35,7 +35,7 @@ As HTML, CSS and JavaScript development becomes increasingly complex, the idé i
 A Java EE servlet-container server, like Tomcat, Jetty, GlassFish, JBoss, WebLogic, etc.
 
 # Installation
-Just download the SparkneyDance30.jar file and put it in your calss path. TODO:Link
+Just download the SparkneyDance30.jar file and put it in your class path. TODO:Link
 
 # Disclaimer
 The author takes no responsibility for use of this software. Use this software at your own risk.
