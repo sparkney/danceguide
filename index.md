@@ -62,7 +62,6 @@ windowPanel.render(context);
 
 ```java
 //A simple example, just to illustrate how i works.
-//Try changing browser width and see what happens.
 
 Font font = new Font().setFamily("arial").setSize(16);
 
@@ -89,8 +88,9 @@ windowPanel.render(context);
 
 
 ```java
-//A more complex and responsive example
-        
+//A more complex and responsive example.
+//Try changing browser width and see what happens.
+
 final Media MOBILE = new Media(0,480);
 
 Text menu = new Text("This might be a menu");
