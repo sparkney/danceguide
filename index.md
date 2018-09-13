@@ -60,6 +60,7 @@ windowPanel.render(context);
 
 ```java
 //A simple example, just to illustrate how i works.
+//Try changing browser width and see what happens.
 
 Font font = new Font().setFamily("arial").setSize(16);
 
