@@ -23,7 +23,7 @@ Dance is an open, very simple, yet powerful, component based architecture and im
 * Much less hard to find bugs and peculiarities.
 * Easy to pick up front-end development for any Java developer.
 * Easier to become a full-stack web developer.
-* Ideally, the web development team only need one programming skill, Java.
+* Ideally, the web development team only need one programming language, Java.
 * One language means better communication between front-end and back end programmers.
 * Ideally, future proof, since applications code is not dependent on the underlying technology.
 * Possibility to use all features in advanced Java IDEs, like auto-completion and auto-refactoring.
