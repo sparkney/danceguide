@@ -59,7 +59,7 @@ windowPanel.render(context);
 # Code examples
 
 ```java
-//A simle example, just to see how i works.
+//A simple example, just to see how i works.
 
 Font font = new Font().setFamily("arial").setSize(16);
 
