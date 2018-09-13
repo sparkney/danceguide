@@ -31,6 +31,10 @@ As HTML, CSS and JavaScript development becomes increasingly complex, the idé i
 * Possibility to use all features in advanced modern Java IDEs.
 * Inherently simple architecture that anyone with just some Java skills will understand.
 
+{% highlight java %}
+//  YOUR CODE HERE
+{% endhighlight %}
+
 # Installation prerequisites
 A Java EE servlet-container server, like Tomcat, Jetty, GlassFish, JBoss, WebLogic, etc.
 
