@@ -123,6 +123,7 @@ centerLayout.add(menu).setHAlign(Align.CENTER).setPadding(20).setDisplay(false).
 centerLayout.add(layout).setHAlign(Align.CENTER);
 
 WindowPanel windowPanel = new WindowPanel();
+windowPanel.addMeta("viewport","width=device-width,initial-scale=1");
 windowPanel.setContent(centerLayout);
 windowPanel.render(context);
 ```
