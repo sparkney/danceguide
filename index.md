@@ -29,7 +29,7 @@ As HTML, CSS and JavaScript development becomes increasingly complex, the idé i
 * One language means better communication between front-end and back end programmers.
 * Ideally, future proof, since the API is not dependent on the underlying technologies.
 * Possibility to use all features in advanced Java IDEs, like auto-completion and auto-refactoring.
-* Inherently simple architecture that anyone with just some Java-skills can understand.
+* Inherently simple architecture that anyone with just some Java skills will understand.
 
 # Installation prerequisites
 A Java EE servlet-container server, like Tomcat, Jetty, GlassFish, JBoss, WebLogic, etc.
