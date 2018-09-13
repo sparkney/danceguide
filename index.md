@@ -11,11 +11,11 @@ As HTML, CSS and JavaScript development becomes increasingly complex, the idé i
 * Seamless integration between front-end and back-end.
 * Underlying HTML and CSS is automatically generated, with much less room for human errors.
 * Component based development.
-* Easily extensible - making custom components is very straightforward.
+* Easily extensible - if needed, making custom components is very straightforward.
 * Readable and easy to understand application code.
 * Much smaller code base.
 * Much easier maintenance.
-* Makes documentation in a consistent way possible.
+* Makes consistent code documentation possible.
 * Ideally, no need for testing in different browsers.
 * Possibility to develop reusable code.
 * Possibility to use encapsulation to hide complexity.
@@ -25,10 +25,10 @@ As HTML, CSS and JavaScript development becomes increasingly complex, the idé i
 * Much less hard to find bugs and peculiarities.
 * Easy to pick up front-end development by any Java developer.
 * Easier to become a full-stack web developer.
-* Ideally, the web development team only need one programming language, Java.
+* Ideally, the web development team can focus on one programming language.
 * One language means better communication between front-end and back end programmers.
 * Ideally, future proof, since the API is not dependent on the underlying technologies.
-* Possibility to use all features in advanced Java IDEs, like auto-completion and auto-refactoring.
+* Possibility to use all features in advanced modern Java IDEs.
 * Inherently simple architecture that anyone with just some Java skills will understand.
 
 # Installation prerequisites
