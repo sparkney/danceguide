@@ -6,7 +6,8 @@ Dance is an open component based architecture for developing web applicatoins in
 * No messy mix of markup and programming code in the front-end.
 * Underlying HTML and CSS is automatically generated, less room for human errors.
 * Component based development.
-* Readable and easy to understand code.
+* Easily extensible, making custom components is very straightforward.
+* Readable and easy to understand application code.
 * Much smaller code base.
 * Much easier maintenance.
 * Makes documentation in a consistent way possible.
