@@ -27,7 +27,7 @@ As HTML, CSS and JavaScript development becomes increasingly complex, the idé i
 * Easier to become a full-stack web developer.
 * Ideally, the web development team only need one programming language, Java.
 * One language means better communication between front-end and back end programmers.
-* Ideally, future proof, since Dance is not dependent on the underlying technology.
+* Ideally, future proof, since the API is not dependent on the underlying technologies.
 * Possibility to use all features in advanced Java IDEs, like auto-completion and auto-refactoring.
 * Inherently simple architecture that anyone with just some Java-skills can understand.
 
