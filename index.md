@@ -6,9 +6,10 @@ Dance is an open, very simple, yet powerful, component based architecture and im
 # Features, in comparison to HTML/CSS/JavaScript
 * Obviously, no cumbersome and time consuming HTML and CSS development.
 * No messy mix of markup and programming code in the front-end.
-* Underlying HTML and CSS is automatically generated, much less room for human errors.
+* Seamless integration between front-end and back-end.
+* Underlying HTML and CSS is automatically generated, with much less room for human errors.
 * Component based development.
-* Easily extensible, making custom components is very straightforward.
+* Easily extensible - making custom components is very straightforward.
 * Readable and easy to understand application code.
 * Much smaller code base.
 * Much easier maintenance.
@@ -18,13 +19,13 @@ Dance is an open, very simple, yet powerful, component based architecture and im
 * Possibility to use encapsulation to hide complexity.
 * Rapid prototyping and mockups.
 * Much better error handling.
-* Much less hard to find bugs.
+* Much less hard to find bugs and peculiarities.
 * Easy to pick up front-end development for any Java developer.
 * Easier to become a full-stack web developer.
-* Ideally, the web development team only need one skill, Java.
+* Ideally, the web development team only need one programming skill, Java.
 * One language means better communication between front-end and back end programmers.
-* Ideally, future proof, since applications code is not dependent on underlying technology.
-* Possibility to use all features in advanced IDEs, like auto-completion and auto-refactoring.
+* Ideally, future proof, since applications code is not dependent on the underlying technology.
+* Possibility to use all features in advanced Java IDEs, like auto-completion and auto-refactoring.
 
 # Installation prerequisites
 A Java EE servlet-container server, like Tomcat, Jetty, GlassFish, JBoss, WebLogic, etc.
