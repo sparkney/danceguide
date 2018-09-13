@@ -23,7 +23,7 @@ As HTML, CSS and JavaScript development becomes increasingly complex, the idé i
 * Common layouts that should be straightforward and intuitive to set up, now is.
 * Much better error handling.
 * Much less hard to find bugs and peculiarities.
-* Easy to pick up front-end development for any Java developer.
+* Easy to pick up front-end development by any Java developer.
 * Easier to become a full-stack web developer.
 * Ideally, the web development team only need one programming language, Java.
 * One language means better communication between front-end and back end programmers.
