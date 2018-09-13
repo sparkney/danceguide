@@ -4,7 +4,7 @@ Dance is an open component based architecture for developing web applicatoins in
 # Features, in comparison to HTML/CSS/JavaScript
 * Obviously, no cumbersome and time consuming HTML and CSS development.
 * No messy mix of markup and programming code in the front-end.
-* Underlying HTML and CSS is automatically generated, less room for human errors.
+* Underlying HTML and CSS is automatically generated, much less room for human errors.
 * Component based development.
 * Easily extensible, making custom components is very straightforward.
 * Readable and easy to understand application code.
@@ -18,6 +18,7 @@ Dance is an open component based architecture for developing web applicatoins in
 * Much better error handling.
 * Much less hard to find bugs.
 * Easy to pick up front-end development for any Java developer.
+* Easier to become a full-stack web developer.
 * Ideally, the web development team only need one skill, Java.
 * One language means better communication between front-end and back end programmers.
 * Ideally, future proof, since applications code is not dependent on underlying technology.
