@@ -17,7 +17,8 @@ Dance is an open, very simple, yet powerful, component based architecture and im
 * Ideally, no need for testing in different browsers.
 * Possibility to develop reusable code.
 * Possibility to use encapsulation to hide complexity.
-* Rapid prototyping and mockups.
+* More rapid prototyping and mockups.
+* Common layouts that should be straightforward and intuitive to set up, now is.
 * Much better error handling.
 * Much less hard to find bugs and peculiarities.
 * Easy to pick up front-end development for any Java developer.
