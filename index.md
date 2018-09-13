@@ -33,11 +33,11 @@ As HTML, CSS and JavaScript development becomes increasingly complex, the idé i
 # Installation prerequisites
 A Java EE servlet-container server, like Tomcat, Jetty, GlassFish, JBoss, WebLogic, etc.
 
-# Disclaimer
-The author takes no responsibility for use of this software. Usage of this software at your own risk.
-
 # Installation
 Just download the SparkneyDance30.jar file and put it in your calss path. TODO:Link
+
+# Disclaimer
+The author takes no responsibility for use of this software. Use this software at your own risk.
 
 # How to begin
 The quickest way to try it out, just fire up a JSP-page and do some Dancing.
