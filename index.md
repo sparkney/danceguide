@@ -31,10 +31,6 @@ As HTML, CSS and JavaScript development becomes increasingly complex, the idé i
 * Possibility to use all features in advanced modern Java IDEs.
 * Inherently simple architecture that anyone with just some Java skills will understand.
 
-{% highlight java %}
-//  YOUR CODE HERE
-{% endhighlight %}
-
 # Installation prerequisites
 A Java EE servlet-container server, like Tomcat, Jetty, GlassFish, JBoss, WebLogic, etc.
 
@@ -47,7 +43,7 @@ The author takes no responsibility for use of this software. Use this software a
 # How to begin
 The quickest way to try it out, just fire up a JSP-page and do some Dancing.
 
-```
+{% highlight java linenos %}
 <%@page import="com.sparkney.dance.core.*" %>
 <%@page import="com.sparkney.dance.gui.base.*" %>
 
@@ -62,7 +58,7 @@ ComponentContext context = new ComponentContext(request, response);
 windowPanel.render(context);
 
 %>
-```
+{% endhighlight %}
 <a href="jsp_example.html" target="_blank">See the result</a>
 
 
