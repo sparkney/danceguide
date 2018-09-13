@@ -1,5 +1,7 @@
 # What is Dance?
-Dance is an open component based architecture for developing web applicatoins in pure Java.
+Dance is front-end and back-end development in pure Java.
+
+Dance is an open, very simple, yet powerful, component based architecture and implementation for developing web applicatoins in pure Java. As HTML, CSS and JavaScript development becomes increasingly complex, the idé is to simplify, hide the complexity and at the same time bring all of Java's features to front-end programming. 
 
 # Features, in comparison to HTML/CSS/JavaScript
 * Obviously, no cumbersome and time consuming HTML and CSS development.
