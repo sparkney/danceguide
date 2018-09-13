@@ -1,8 +1,29 @@
-# What is Dance
-Dance is an open architecture for developing web applicatoins i pure Java.
+# What is Dance?
+Dance is an open component based architecture for developing web applicatoins in pure Java.
+
+# Features, in comparison to HTML/CSS/JavaScript
+* Obviously, no cumbersome and time consuming HTML and CSS development.
+* No messy mix of markup and programming code in the front-end.
+* Underlying HTML and CSS is automatically generated, less room for human errors.
+* Component based development.
+* Readable and easy to understand code.
+* Much smaller code base.
+* Much easier maintenance.
+* Makes documentation in a consistent way possible.
+* Ideally, no need for testing in different browsers.
+* Possibility to develop reusable code.
+* Possibility to use encapsulation to hide complexity.
+* Rapid prototyping and mockups.
+* Much better error handling.
+* Much less hard to find bugs.
+* Easy to pick up front-end development for any Java developer.
+* Ideally, the web development team only need one skill, Java.
+* One language means better communication between front-end and back end programmers.
+* Ideally, future proof, since applications code is not dependent on underlying technology.
+* Possibility to use all features in advanced IDEs, like auto-completion and auto-refactoring.
 
 # Installation
-Just download the SparkneyDance30.jar file and put it in your calss path.
+Just download the SparkneyDance30.jar file and put it in your calss path. TODO:Link
 
 # How to begin
 The quickest way to try it out, just fire up a JSP-page and do some dancing.
