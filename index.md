@@ -41,22 +41,15 @@ Just download the SparkneyDance04.jar file and put it in your class path. TODO:L
 The author takes no responsibility for use of this software. Use this software at your own risk.
 
 # How to begin
-It's litteraly just a hand-full lines of code. The Hello World example is two classes, the Controller and an Action.
-
-
+All you need to get started is just a few lines of code. The Hello World example is two classes, the Controller and an Action.
 
 #### Controller.java
 ```java
-import com.sparkney.dance.core.*;
-import com.sparkney.dance.gui.base.*;
+import com.sparkney.dance.core.AbstractController;
+import javax.servlet.annotation.WebServlet;
 
-public class WorldAction extends AbstractAction{
-
-    @Override
-    public Component perform(Context context) throws Exception{
-        return new Text("Hello world!");
-    }
-}
+@WebServlet(urlPatterns = {"/hello/*"})
+public class Controller extends AbstractController{}
 ```
 #### WorldAction.java
 ```java
@@ -70,8 +63,14 @@ public class WorldAction extends AbstractAction{
         return new Text("Hello world!");
     }
 }
+```
+
+Fire up your favorite servlet container and enter this URL in the web browser
 
 ```
+http://myhost/hello/worldAction
+```
+where *myhost* may be something like localhost:8080 if you run locally, or your domain name if you run on a server.
 
 
 
