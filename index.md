@@ -12,7 +12,7 @@ As HTML, CSS and JavaScript development becomes increasingly complex, the idé i
 * Underlying HTML and CSS is automatically generated, with much less room for human errors.
 * Component based development.
 * Easily extensible - if needed, making custom components is very straightforward.
-* Readable and easy to understand application code.
+* Readable and easy to understand front-end code.
 * Much smaller code base.
 * Much easier maintenance.
 * Makes consistent code documentation possible.
