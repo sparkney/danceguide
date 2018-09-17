@@ -41,14 +41,14 @@ Just download the SparkneyDance04.jar file and put it in your class path. TODO:L
 The author takes no responsibility for use of this software. Use this software at your own risk.
 
 # How to begin
-All you need to get started is just a few lines of code. The Hello World example is two classes, the Controller and an Action.
+All you need to get started is just a few lines of code. The Hello World example is two classes, the controller and an action. The files need to be in the same package.
 
 #### Controller.java
 ```java
 import com.sparkney.dance.core.AbstractController;
 import javax.servlet.annotation.WebServlet;
 
-@WebServlet(urlPatterns = {"/hello/*"})
+@WebServlet(urlPatterns = {"/begin/*"})
 public class Controller extends AbstractController{}
 ```
 #### WorldAction.java
@@ -64,17 +64,78 @@ public class WorldAction extends AbstractAction{
     }
 }
 ```
+<a href="world_action.html" target="_blank">See the result</a>
 
 Fire up your favorite servlet container and enter this URL in the web browser
 
 ```
-http://myhost/hello/worldAction
+http://myhost/begin/worldAction
 ```
-where *myhost* may be something like localhost:8080 if you run locally, or your domain name if you run on a server.
+where *myhost* may be something like localhost:8080 if you run locally, or your domain name if you run on a remote server.
+
+That's it. From here, we just expand the the concept. To make a link, we add a new action with few more lines. The controller remains the same.
+
+#### LinkAction.java
+```java
+import com.sparkney.dance.core.*;
+import com.sparkney.dance.gui.base.*;
+
+public class LinkAction extends AbstractAction{
+
+    public LinkAction(){
+        setActionMapper(Controller.getInstance().getActionMapper());
+    }
+    
+    @Override
+    public Component perform(Context context) throws Exception{
+        
+        LinkPanel linkPanel = new LinkPanel();
+        linkPanel.setContent(new Text("This is a link!"));
+        linkPanel.setOnClick(new LinkAction());
+
+        return linkPanel;
+    }
+}
+```
+<a href="link_action.html" target="_blank">See the result</a>
+
+We added a constructor, but don't mind the details for now. It's just how you want to do it for every action. LinkPanel is a component used to create links. Clickning the link will execute the LinkAction, i.e it will show the same link again.
+
+What if you want a text above the link? Then layout manages come in handy. The are used to layout content. Content can be any component, a text, link, or other layout managers. By combining layout manages, complex layouts can easily be achieved.
+
+```java
+import com.sparkney.dance.core.*;
+import com.sparkney.dance.gui.base.*;
+
+public class LayoutAction extends AbstractAction{
+
+    public LayoutAction(){
+        setActionMapper(Controller.getInstance().getActionMapper());
+    }
+    
+    @Override
+    public Component perform(Context context) throws Exception{
+        
+        HorizontalLayout hLayout = new HorizontalLayout();
+        hLayout.setGap(10);
+        hLayout.add(new Text("Left"));
+        hLayout.add(new Text("Right"));
+        
+        VerticalLayout vLayout = new VerticalLayout();
+        vLayout.setGap(10);
+        vLayout.setPadding(10);
+        vLayout.setBorder(new Border());
+        vLayout.add(new Text("Top")).setHAlign(Align.CENTER);
+        vLayout.add(hLayout);
+        vLayout.add(new Text("Bottom")).setHAlign(Align.CENTER);
+
+        return vLayout;
+    }
+}
+```
+<a href="layout_action.html" target="_blank">See the result</a>
 
 
-
-<a href="jsp_example.html" target="_blank">See the result</a>
 
 
 # Code examples
