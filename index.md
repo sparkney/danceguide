@@ -15,7 +15,7 @@ As HTML, CSS and JavaScript development becomes increasingly complex, the idé i
 * Readable and easy to understand front-end code.
 * Much smaller code base.
 * Much easier maintenance.
-* Makes consistent code documentation possible.
+* Consistent code documentation.
 * Ideally, no need for testing in different browsers.
 * Possibility to develop reusable code.
 * Possibility to use encapsulation to hide complexity.
@@ -26,7 +26,7 @@ As HTML, CSS and JavaScript development becomes increasingly complex, the idé i
 * Easy to pick up front-end development by any Java developer.
 * Easier to become a full-stack web developer.
 * Ideally, the web development team can focus on one programming language.
-* One language means better communication between front-end and back end programmers.
+* One language means better communication between front-end and back-end programmers.
 * Ideally, future proof, since the API is not dependent on the underlying technologies.
 * Possibility to use all features in advanced modern Java IDEs.
 * Inherently simple architecture that anyone with just some Java skills will understand.
@@ -35,30 +35,46 @@ As HTML, CSS and JavaScript development becomes increasingly complex, the idé i
 A Java EE servlet-container server, like Tomcat, Jetty, GlassFish, JBoss, WebLogic, etc.
 
 # Installation
-Just download the SparkneyDance30.jar file and put it in your class path. TODO:Link
+Just download the SparkneyDance04.jar file and put it in your class path. TODO:Link
 
 # Disclaimer
 The author takes no responsibility for use of this software. Use this software at your own risk.
 
 # How to begin
-The quickest way to try it out, just fire up a JSP-page and do some Dancing.
+It's litteraly just a hand-full lines of code. The Hello World example is two classes, the Controller and an Action.
+
+
+
+Controller.java
+```java
+import com.sparkney.dance.core.*;
+import com.sparkney.dance.gui.base.*;
+
+public class WorldAction extends AbstractAction{
+
+    @Override
+    public Component perform(Context context) throws Exception{
+        return new Text("Hello world!");
+    }
+}
+```
+WorldAction.java
+```java
+import com.sparkney.dance.core.*;
+import com.sparkney.dance.gui.base.*;
+
+public class WorldAction extends AbstractAction{
+
+    @Override
+    public Component perform(Context context) throws Exception{
+        return new Text("Hello world!");
+    }
+}
 
 ```
-<%@page import="com.sparkney.dance.core.*" %>
-<%@page import="com.sparkney.dance.gui.base.*" %>
 
-<%
 
-Text text = new Text("This is a dance component.");
 
-WindowPanel windowPanel = new WindowPanel();
-windowPanel.setContent(text);
-
-ComponentContext context = new ComponentContext(request, response);
-windowPanel.render(context);
-
-%>
-```
 <a href="jsp_example.html" target="_blank">See the result</a>
 
 
