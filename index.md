@@ -45,7 +45,7 @@ It's litteraly just a hand-full lines of code. The Hello World example is two cl
 
 
 
-####Controller.java
+#### Controller.java
 ```java
 import com.sparkney.dance.core.*;
 import com.sparkney.dance.gui.base.*;
@@ -58,7 +58,7 @@ public class WorldAction extends AbstractAction{
     }
 }
 ```
-####WorldAction.java
+#### WorldAction.java
 ```java
 import com.sparkney.dance.core.*;
 import com.sparkney.dance.gui.base.*;
