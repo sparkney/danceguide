@@ -48,23 +48,28 @@ All you need to get started is just a few lines of code. The Hello World example
 import com.sparkney.dance.core.AbstractController;
 import javax.servlet.annotation.WebServlet;
 
-@WebServlet(urlPatterns = {"/begin/*"})
+@WebServlet(urlPatterns = {"/danceguide/*"})
 public class Controller extends AbstractController{}
 ```
-#### WorldAction.java
+#### HelloWorldAction.java
 ```java
 import com.sparkney.dance.core.*;
 import com.sparkney.dance.gui.base.*;
 
-public class WorldAction extends AbstractAction{
+public class HelloWorldAction extends AbstractAction{
 
+    public HelloWorldAction(){
+        setActionMapper(Controller.getInstance().getActionMapper());
+    }
+    
     @Override
     public Component perform(Context context) throws Exception{
         return new Text("Hello world!");
     }
+    
 }
 ```
-<a href="world_action.html" target="_blank">See the result</a>
+<a href="hello_world_action.html" target="_blank">See the result</a>
 
 Fire up your favorite servlet container and enter this URL in the web browser
 
@@ -90,8 +95,8 @@ public class LinkAction extends AbstractAction{
     public Component perform(Context context) throws Exception{
         
         LinkPanel linkPanel = new LinkPanel();
-        linkPanel.setContent(new Text("This is a link!"));
-        linkPanel.setOnClick(new LinkAction());
+        linkPanel.setContent(new Text("Show Hello world"));
+        linkPanel.setOnClick(new HelloWorldAction());
 
         return linkPanel;
     }
