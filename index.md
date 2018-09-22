@@ -1,5 +1,5 @@
 # Content
-[What is Dance](#what_is_dance)  
+[What is Java Dance](#what_is_dance)  
 [Features](#features)  
 [Disclaimer](#disclaimer)  
 [Installation prerequisites](#installation_prerequisites)  
@@ -7,7 +7,7 @@
 [How to begin](#how_to_begin)  
 
 <a name="what_is_dance"></a>
-# What is Dance?
+# What is Java Dance?
 Pure Java web development.
 
 Dance is an open source, very simple, yet powerful, component based architecture and implementation for developing web applicatoins in pure Java.
