@@ -1,9 +1,9 @@
 # Content
 [What is Dance](#what_is_dance)  
 [Features](#features)  
+[Disclaimer](#disclaimer)  
 [Installation prerequisites](#installation_prerequisites)  
 [Installation](#installation)  
-[Disclaimer](#disclaimer)  
 [How to begin](#how_to_begin)  
 
 <a name="what_is_dance"></a>
@@ -41,6 +41,10 @@ As HTML, CSS and JavaScript development becomes increasingly complex, the idé i
 * Possibility to use all features in advanced modern Java IDEs.
 * Inherently simple architecture that anyone with just some Java skills will understand.
 
+<a name="disclaimer"></a>
+# Disclaimer
+The author takes no responsibility for use of this software. Use this software at your own risk.
+
 <a name="installation_prerequisites"></a>
 # Installation prerequisites
 A Java EE servlet-container server, like Tomcat, Jetty, GlassFish, JBoss, WebLogic, etc.
@@ -48,10 +52,6 @@ A Java EE servlet-container server, like Tomcat, Jetty, GlassFish, JBoss, WebLog
 <a name="installation"></a>
 # Installation
 Just download the SparkneyDance04.jar file and put it in your class path. TODO:Link
-
-<a name="disclaimer"></a>
-# Disclaimer
-The author takes no responsibility for use of this software. Use this software at your own risk.
 
 <a name="how_to_begin"></a>
 # How to begin
