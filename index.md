@@ -51,7 +51,7 @@ A Java EE servlet-container server, like Tomcat, Jetty, GlassFish, JBoss, WebLog
 
 <a name="installation"></a>
 # Installation
-Just download the SparkneyDance04.jar file and put it in your class path. TODO:Link
+Just download the SparkneyDance04.jar file and add it in your class path. TODO:Link
 
 <a name="how_to_begin"></a>
 # How to begin
