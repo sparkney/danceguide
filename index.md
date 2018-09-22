@@ -1,6 +1,10 @@
-[What is Dance](#what_is_dance)
-
-
+# Content
+[What is Dance](#what_is_dance)  
+[Features](#features)  
+[Installation prerequisites](#installation_prerequisites)  
+[Installation](#installation)  
+[Disclaimer](#disclaimer)  
+[How to begin](3how_to_begin)  
 
 <a name="what_is_dance"></a>
 # What is Dance?
@@ -10,6 +14,7 @@ Dance is an open source, very simple, yet powerful, component based architecture
 
 As HTML, CSS and JavaScript development becomes increasingly complex, the idé is to boost productivity by creating a consistent API, hide complexity, and at the same time bring all of Java's features to front-end programming. 
 
+<a name="features"></a>
 # Features, in comparison to HTML/CSS/JavaScript
 * Obviously, no cumbersome and time consuming HTML and CSS handcrafting.
 * No messy mix of markup and programming code in the front-end.
@@ -36,15 +41,19 @@ As HTML, CSS and JavaScript development becomes increasingly complex, the idé i
 * Possibility to use all features in advanced modern Java IDEs.
 * Inherently simple architecture that anyone with just some Java skills will understand.
 
+<a name="installation_prerequisites"></a>
 # Installation prerequisites
 A Java EE servlet-container server, like Tomcat, Jetty, GlassFish, JBoss, WebLogic, etc.
 
+<a name="installation"></a>
 # Installation
 Just download the SparkneyDance04.jar file and put it in your class path. TODO:Link
 
+<a name="disclaimer"></a>
 # Disclaimer
 The author takes no responsibility for use of this software. Use this software at your own risk.
 
+<a name="how_to_begin"></a>
 # How to begin
 All you need to get started is just a few lines of code. The Hello World example is two classes, the controller and an action. The controller mapps a request to the action. Controller and actions need to be in the same package.
 
