@@ -35,7 +35,7 @@ As HTML, CSS and JavaScript development becomes increasingly complex, the idé i
 * Much less hard to find bugs and peculiarities.
 * Easy to pick up front-end development by any Java developer.
 * Easier to become a full-stack web developer.
-* Ideally, the web development team can focus on one programming language.
+* Ideally, the web development team can focus on a single programming language.
 * One language means better communication between front-end and back-end programmers.
 * Ideally, future proof, since the API is not dependent on the underlying technologies.
 * Possibility to use all features in advanced modern Java IDEs.
