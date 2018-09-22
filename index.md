@@ -88,7 +88,7 @@ public class HelloWorldAction extends AbstractAction{
 Fire up your favorite servlet container and enter this URL in the web browser
 
 ```
-http://myhost/begin/worldAction
+http://myhost/danceguide/helloWorldAction
 ```
 where *myhost* may be something like localhost:8080 if you run locally, or your domain name if you run on a remote server.
 
