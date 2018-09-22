@@ -4,7 +4,7 @@
 [Installation prerequisites](#installation_prerequisites)  
 [Installation](#installation)  
 [Disclaimer](#disclaimer)  
-[How to begin](3how_to_begin)  
+[How to begin](#how_to_begin)  
 
 <a name="what_is_dance"></a>
 # What is Dance?
