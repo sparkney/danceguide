@@ -4,7 +4,7 @@
 [Disclaimer](#disclaimer)  
 [Installation prerequisites](#installation_prerequisites)  
 [Installation](#installation)  
-[How to begin](#how_to_begin)  
+[Getting started](#getting_started)  
 
 <a name="what_is_dance"></a>
 # What is Java Dance?
@@ -53,8 +53,8 @@ A Java EE servlet-container server, like Tomcat, Jetty, GlassFish, JBoss, WebLog
 # Installation
 Just download the SparkneyDance04.jar file and add it in your class path. TODO:Link
 
-<a name="how_to_begin"></a>
-# How to begin
+<a name="getting_started"></a>
+# Getting started
 All you need to get started is just a few lines of code. The Hello World example is two classes, the controller and an action. The controller mapps a request to the action. Controller and actions need to be in the same package.
 
 #### Controller.java
