@@ -47,7 +47,7 @@ The author takes no responsibility for use of this software. Use this software a
 
 <a name="installation_prerequisites"></a>
 # Installation prerequisites
-A Java EE servlet-container server, like Tomcat, Jetty, GlassFish, JBoss, WebLogic, etc.
+A Java EE servlet 3.0 container server, like Tomcat, Jetty, GlassFish, JBoss, WebLogic, etc.
 
 <a name="installation"></a>
 # Installation
