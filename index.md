@@ -17,7 +17,7 @@ As HTML, CSS and JavaScript development becomes increasingly complex, the idé i
 <a name="features"></a>
 # Features, in comparison to HTML/CSS/JavaScript
 * Obviously, no cumbersome and time consuming HTML and CSS handcrafting.
-* No messy mix of markup and programming code in the front-end.
+* No messy mix of markup and programming code.
 * Seamless integration between front-end and back-end.
 * Underlying HTML and CSS is automatically generated, with much less room for human errors.
 * Component based development.
