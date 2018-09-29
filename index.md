@@ -173,6 +173,7 @@ public class LayoutAction extends AbstractAction{
 ```
 <a href="layout_action.html" target="_blank">See the result</a>
 
+<a name="elaborate_example"></a>
 # Elaborate example
 
 We don't really want any front-end code in the actions. That's where the business logic should be. Instead, we create a page component and an action that shows tha page. The page will be a little more complex, so we call is ComplexPage, and the action ShowComplexPage. We still use the same controller.
