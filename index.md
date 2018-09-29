@@ -4,8 +4,8 @@
 [Disclaimer](#disclaimer)  
 [Installation prerequisites](#installation_prerequisites)  
 [Installation](#installation)  
-[Getting started](#getting_started)
-[Elaborate example](#elaborate_example)
+[Getting started](#getting_started)  
+[Elaborate example](#elaborate_example)  
 
 
 
