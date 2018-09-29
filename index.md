@@ -184,7 +184,7 @@ We don't really want any front-end code in the actions. That's where the busines
 
 #### ComplexPage.java
 
-In this example, we are creating a new component. This one happen to be an entire page, but it could be a skeleton that combines other components to form a page. The layout is a responsive three colums. Change browser width ans see what happens.
+In this example, we are creating a new component. This one happens to be an entire page, but it could be a part of a page or a skeleton that combines other components to form a page. The layout is a responsive three colums. Change browser width ans see what happens.
 
 ```java
 import com.sparkney.dance.core.*;
