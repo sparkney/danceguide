@@ -15,7 +15,8 @@ Dance is an open source, very simple, yet powerful, component based architecture
 As HTML, CSS and JavaScript development becomes increasingly complex, the idé is to boost productivity by creating a consistent API, hide complexity, and at the same time bring all of Java's features to front-end programming. 
 
 <a name="features"></a>
-# Features, in comparison to HTML/CSS/JavaScript
+# Features
+This is in comparison to classic HTML/CSS/JavaScript development.
 * Obviously, no cumbersome and time consuming HTML and CSS handcrafting.
 * No messy mix of markup and programming code.
 * Seamless integration between front-end and back-end.
