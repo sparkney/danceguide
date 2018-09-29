@@ -59,7 +59,7 @@ Just download the SparkneyDance04.jar file and add it in your class path. TODO:L
 
 <a name="getting_started"></a>
 # Getting started
-All you need to get started is just a few lines of code. The Hello World example is two classes, the controller and an action. The controller mapps a request to the action. Controller and actions need to be in the same package.
+All you need to get started is few lines of code. The Hello World example is two classes, the controller and an action. The controller mapps a request to the action. For now, controller and actions need to be in the same package.
 
 #### Controller.java
 ```java
