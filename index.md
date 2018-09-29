@@ -65,6 +65,7 @@ Just download the SparkneyDance04.jar file and add it in your class path. TODO:L
 All you need to get started is few lines of code. The Hello World example is two classes, the controller and an action. The controller mapps a request to the action. For now, controller and actions need to be in the same package.
 
 #### Controller.java
+
 ```java
 import com.sparkney.dance.core.AbstractController;
 import javax.servlet.annotation.WebServlet;
@@ -82,7 +83,9 @@ public class Controller extends AbstractController{
 }
 
 ```
+
 #### HelloWorldAction.java
+
 ```java
 import com.sparkney.dance.core.*;
 import com.sparkney.dance.gui.base.*;
@@ -112,6 +115,7 @@ where *myhost* may be something like localhost:8080 if you run locally, or your 
 That's it. From here, we just expand the the concept. To make a link, we add a new action with few more lines.
 
 #### LinkAction.java
+
 ```java
 import com.sparkney.dance.core.*;
 import com.sparkney.dance.gui.base.*;
