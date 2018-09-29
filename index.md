@@ -63,7 +63,17 @@ import com.sparkney.dance.core.AbstractController;
 import javax.servlet.annotation.WebServlet;
 
 @WebServlet(urlPatterns = {"/danceguide/*"})
-public class Controller extends AbstractController{}
+public class Controller extends AbstractController{
+
+    public static Controller instance;
+    
+    @Override
+    public void init(){
+        super.init();
+        instance=this;
+    }
+}
+
 ```
 #### HelloWorldAction.java
 ```java
@@ -71,16 +81,16 @@ import com.sparkney.dance.core.*;
 import com.sparkney.dance.gui.base.*;
 
 public class HelloWorldAction extends AbstractAction{
-
-    public HelloWorldAction(){
-        setActionMapper(Controller.getInstance().getActionMapper());
-    }
     
+    @Override
+    public void init(){
+        setActionMapper(Controller.instance.getActionMapper());
+    }
+
     @Override
     public Component perform(Context context) throws Exception{
         return new Text("Hello world!");
     }
-    
 }
 ```
 <a href="hello_world_action.html" target="_blank">See the result</a>
@@ -101,15 +111,16 @@ import com.sparkney.dance.gui.base.*;
 
 public class LinkAction extends AbstractAction{
 
-    public LinkAction(){
-        setActionMapper(Controller.getInstance().getActionMapper());
+    @Override
+    public void init(){
+        setActionMapper(Controller.instance.getActionMapper());
     }
     
     @Override
     public Component perform(Context context) throws Exception{
-        
+
         LinkPanel linkPanel = new LinkPanel();
-        linkPanel.setContent(new Text("Show Hello world"));
+        linkPanel.setContent(new Text("Click to show Hello world"));
         linkPanel.setOnClick(new HelloWorldAction());
 
         return linkPanel;
@@ -128,8 +139,9 @@ import com.sparkney.dance.gui.base.*;
 
 public class LayoutAction extends AbstractAction{
 
-    public LayoutAction(){
-        setActionMapper(Controller.getInstance().getActionMapper());
+    @Override
+    public void init(){
+        setActionMapper(Controller.instance.getActionMapper());
     }
     
     @Override
