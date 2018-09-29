@@ -4,7 +4,10 @@
 [Disclaimer](#disclaimer)  
 [Installation prerequisites](#installation_prerequisites)  
 [Installation](#installation)  
-[Getting started](#getting_started)  
+[Getting started](#getting_started)
+[Elaborate example](#elaborate_example)
+
+
 
 <a name="what_is_dance"></a>
 # What is Java Dance?
@@ -170,9 +173,83 @@ public class LayoutAction extends AbstractAction{
 ```
 <a href="layout_action.html" target="_blank">See the result</a>
 
+# Elaborate example
+
+We don't really want any front-end code in the actions. That's where the business logic should be. Instead, we create a page component and an action that shows tha page. The page will be a little more complex, so we call is ComplexPage, and the action ShowComplexPage. We still use the same controller.
+
+#### ComplexPage.java
+
+Now we are creating a new component. This happen to be an entire page, but it could be skeleton that combines other components to form a page. This is a responsive three colum layout. Change browser width ans see what happens.
+
+```java
+import com.sparkney.dance.core.*;
+import com.sparkney.dance.gui.base.*;
+
+public class ComplexPage extends Component{
+    
+    @Override
+    public void render(Context context) throws Exception{
+        final Media MOBILE = new Media(0,480);
+
+        Text menu = new Text("This might be a menu");
+        Text content = new Text("This is some content");
+        Text footer = new Text("Here goes the footer");
+
+        Image image = new Image("http://danceguide.sparkney.com/256px-Two_dancers.jpg");
+        image.setRelativeWidth(100);
+        image.setTooltip("Dance image");
+        
+        BasicLayout layout = new BasicLayout(BasicLayout.Method.HORIZONTAL);
+        layout.setMethod(MOBILE, BasicLayout.Method.VERTICAL);
+        layout.setRelativeWidth(100);
+        layout.setMaxWidth(800);
+        layout.setPadding(10);
+        layout.setCellPadding(10);
+        layout.setGap(10);
+        layout.setGap(MOBILE,20);
+        layout.setCellBorder(new Border());
+        layout.add(content).setRelativeWidth(33).setRelativeWidth(MOBILE, 100);
+        layout.add(image).setRelativeWidth(33).setRelativeWidth(MOBILE, 100);
+        layout.add(menu).setRelativeWidth(33).setDisplay(MOBILE, false);
+        
+        BasicLayout centerLayout = new BasicLayout(BasicLayout.Method.VERTICAL);
+        centerLayout.setRelativeWidth(100);
+        centerLayout.add(menu).setHAlign(Align.CENTER).setPadding(20).setDisplay(false).setDisplay(MOBILE, true);
+        centerLayout.add(layout).setHAlign(Align.CENTER);
+        centerLayout.add(footer).setHAlign(Align.CENTER).setPadding(40,0,40,0).setBackgroundColor(new Color("lightgray"));
+
+        WindowPanel windowPanel = new WindowPanel();
+        windowPanel.setContent(centerLayout);
+        windowPanel.addMeta("viewport","width=device-width,initial-scale=1");
+        windowPanel.render(context);
+    }
+}
+```
+
+#### ViewComplexPage.java
+
+Since actions do stuff, it's a good idea to begin the name with a descriptive verb.
+
+```java
+import com.sparkney.dance.core.*;
+
+public class ViewComplexPage extends AbstractAction{
+    
+    @Override
+    public void init(){
+        setActionMapper(Controller.instance.getActionMapper());
+    }
+
+    @Override
+    public Component perform(Context context) throws Exception{
+        return new ComplexPage();
+    }
+}
+```
 
 
 
+-------------------
 # Code examples
 
 ```java
