@@ -102,7 +102,7 @@ http://myhost/danceguide/helloWorldAction
 ```
 where *myhost* may be something like localhost:8080 if you run locally, or your domain name if you run on a remote server.
 
-That's it. From here, we just expand the the concept. To make a link, we add a new action with few more lines. The controller remains the same.
+That's it. From here, we just expand the the concept. To make a link, we add a new action with few more lines.
 
 #### LinkAction.java
 ```java
