@@ -129,7 +129,7 @@ public class LinkAction extends AbstractAction{
 ```
 <a href="link_action.html" target="_blank">See the result</a>
 
-We added a constructor, but don't mind the details for now. It's just how you want to do it for every action. LinkPanel is a component used to create links. Clickning the link will execute the LinkAction, i.e it will show the same link again.
+LinkPanel is used to create links, and we link to the HelloWorldAction from previous exemple. Clickning the link will execute HelloWorldAction.
 
 What about adding components together? This is where layout manages come in handy. They are used to compose content and manage layout properties. Content can be any component, a text, link, or other layout managers. By combining layout manages, complex layouts can easily be achieved.
 
