@@ -40,6 +40,9 @@ As HTML, CSS and JavaScript development becomes increasingly complex, the idé i
 * Ideally, future proof, since the API is not dependent on the underlying technologies.
 * Possibility to use all features in advanced modern Java IDEs.
 * Inherently simple architecture that anyone with just some Java skills will understand.
+* No need to load huge CSS or JavaScript libraries or plugins. 
+* Generated code is automatically minimized.
+* And counting ...
 
 <a name="disclaimer"></a>
 # Disclaimer
