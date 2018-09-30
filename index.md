@@ -2,7 +2,7 @@
 [What is Java Dance](#what_is_dance)  
 [Features](#features)  
 [Disclaimer](#disclaimer)  
-[Installation prerequisites](#installation_prerequisites)  
+[Requirements](#requirements)  
 [Installation](#installation)  
 [Getting started](#getting_started)  
 [Elaborate example](#elaborate_example)  
@@ -51,8 +51,8 @@ This is in comparison to classic HTML/CSS/JavaScript development.
 # Disclaimer
 The author takes no responsibility for use of this software. Use this software at your own risk.
 
-<a name="installation_prerequisites"></a>
-# Installation prerequisites
+<a name="requirements"></a>
+# Requirements
 A Java EE servlet 3.0 container server, like Tomcat, Jetty, GlassFish, JBoss, WebLogic, etc.
 
 <a name="installation"></a>
