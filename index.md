@@ -9,6 +9,10 @@
 
 [TOC]
 
+# Section 1
+## Sub-section 1
+# Section 2
+
 <a name="what_is_dance"></a>
 # What is Dance?
 Pure Java web development.
