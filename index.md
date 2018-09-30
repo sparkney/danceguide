@@ -139,7 +139,7 @@ public class LinkAction extends AbstractAction{
 ```
 <a href="link_action.html" target="_blank">See the result</a>
 
-LinkPanel is used to create links, and we link to the HelloWorldAction from previous exemple. Clickning the link will execute HelloWorldAction.
+LinkPanel is used to create links, and we link to the HelloWorldAction from previous exemple. Clickning the link will execute the HelloWorldAction.
 
 What about adding components together? This is where layout manages come in handy. They are used to compose content and manage layout properties. Content can be any component, a text, link, or other layout managers. By combining layout manages, complex layouts can easily be achieved.
 
@@ -179,7 +179,7 @@ public class LayoutAction extends AbstractAction{
 <a name="elaborate_example"></a>
 # Elaborate example
 
-We don't really want any front-end code in the actions. That's where the business logic should be. Instead, we create a page component and an action that shows tha page. The page will be a little more complex, so we call is ComplexPage, and the action ShowComplexPage. We still use the same controller.
+We don't really want any front-end code in the actions. That's where the business logic should be. Instead, we create a page component and an action that shows the page. The page will be a little more complex, so we call is ComplexPage, and the action ShowComplexPage. No changes to the Controller.
 
 #### ComplexPage.java
 
