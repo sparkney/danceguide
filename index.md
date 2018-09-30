@@ -7,7 +7,7 @@
 [Getting started](#getting_started)  
 [Elaborate example](#elaborate_example)  
 
-
+[TOC]
 
 <a name="what_is_dance"></a>
 # What is Dance?
@@ -187,14 +187,12 @@ http://myhost/danceguide/layoutAction
 
 <a name="elaborate_example"></a>
 # Elaborate example
-## Elaborate example
-### Elaborate example
 
 We don't really want any front-end code in the actions. That's where the business logic should be. Instead, we create a page component and an action that shows the page. The page is a little more complex, so we call is ComplexPage, and the action ShowComplexPage. No changes to the Controller.
 
 #### ComplexPage.java
 
-In this example, we are creating a new component, a responsive three colums page. Change browser width ans see what happens.
+In this example, we are creating a new component, a responsive three colums page.
 
 ```java
 import com.sparkney.dance.core.*;
@@ -261,12 +259,13 @@ public class ViewComplexPage extends AbstractAction{
     }
 }
 ```
+Execute tha ViewComplexPage action and checkout the result.
 
 ```
 http://myhost/danceguide/viewComplexPage
 ```
 
-
+ Change browser width and see what happens.
 
 
 
