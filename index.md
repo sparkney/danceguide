@@ -1,11 +1,4 @@
-# Content
-[What is Dance](#what_is_dance)  
-[Features](#features)  
-[Disclaimer](#disclaimer)  
-[Requirements](#requirements)  
-[Installation](#installation)  
-[Getting started](#getting_started)  
-[Elaborate example](#elaborate_example)  
+# Table of Contents
 
 * TOC
 {:toc}
