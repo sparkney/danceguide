@@ -1,5 +1,5 @@
 # Content
-[What is Java Dance](#what_is_dance)  
+[What is Dance](#what_is_dance)  
 [Features](#features)  
 [Disclaimer](#disclaimer)  
 [Requirements](#requirements)  
@@ -10,7 +10,7 @@
 
 
 <a name="what_is_dance"></a>
-# What is Java Dance?
+# What is Dance?
 Pure Java web development.
 
 Dance is an open source, very simple, yet powerful, component based architecture for developing web applicatoins in pure Java.
@@ -31,14 +31,13 @@ This is in comparison to classic HTML/CSS/JavaScript development.
 * Much easier maintenance.
 * Consistent code documentation.
 * Ideally, no need for testing in different browsers.
-* Far better options to develop reusable code.
+* Far better options when developing reusable code.
 * Possibility to use encapsulation to hide complexity.
 * More rapid prototyping and mockups.
 * Common layouts that should be straightforward and intuitive to set up, now is.
 * Much better error handling.
 * Much less hard to find bugs and peculiarities.
-* Easy to pick up front-end development by any Java developer.
-* Easier to become a full-stack web developer.
+* Easy to pick up front-end development by any Java back-end developer.
 * Ideally, the web development team can focus on a single programming language.
 * One language means better communication between front-end and back-end programmers.
 * Possibility to use all features in advanced modern Java IDEs.
