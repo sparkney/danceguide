@@ -7,11 +7,8 @@
 [Getting started](#getting_started)  
 [Elaborate example](#elaborate_example)  
 
-[TOC]
-
-# Section 1
-## Sub-section 1
-# Section 2
+* TOC
+{:toc}
 
 <a name="what_is_dance"></a>
 # What is Dance?
