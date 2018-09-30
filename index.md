@@ -15,7 +15,7 @@ Pure Java web development.
 
 Dance is an open source, very simple, yet powerful, component based architecture for developing web applicatoins in pure Java.
 
-As HTML, CSS and JavaScript development becomes increasingly complex, the idé is to boost productivity by creating a consistent API, hide complexity, and at the same time bring all of Java's features to front-end programming. 
+As HTML, CSS and JavaScript development becomes increasingly complex, the idea is to boost productivity by creating a consistent API, hide complexity, and at the same time bring all of Java's features to front-end programming. 
 
 <a name="features"></a>
 # Features
@@ -60,7 +60,7 @@ Just download the SparkneyDance04.jar file and add it in your class path. TODO:L
 
 <a name="getting_started"></a>
 # Getting started
-All you need to get started is few lines of code. The Hello World example is two classes, the controller and an action. The controller mapps a request to the action. For now, controller and actions need to be in the same package.
+All you need to get started is few lines of code. The Hello World example is two classes, the controller and an action. The controller mapps a request to the action. For this example, controller and actions need to be in the same package.
 
 #### Controller.java
 
@@ -108,6 +108,7 @@ Fire up your favorite servlet container and enter this URL in the web browser
 ```
 http://myhost/danceguide/helloWorldAction
 ```
+
 where *myhost* may be something like localhost:8080 if you run locally, or your domain name if you run on a remote server.
 
 That's it. From here, we just expand the the concept. To make a link, we add a new action with few more lines.
@@ -136,7 +137,12 @@ public class LinkAction extends AbstractAction{
     }
 }
 ```
+
 <a href="link_action.html" target="_blank">See the result</a>
+
+```
+http://myhost/danceguide/linkAction
+```
 
 LinkPanel is used to create links, and we link to the HelloWorldAction from previous exemple. Clickning the link will execute the HelloWorldAction.
 
@@ -175,14 +181,18 @@ public class LayoutAction extends AbstractAction{
 ```
 <a href="layout_action.html" target="_blank">See the result</a>
 
+```
+http://myhost/danceguide/layoutAction
+```
+
 <a name="elaborate_example"></a>
 # Elaborate example
 
-We don't really want any front-end code in the actions. That's where the business logic should be. Instead, we create a page component and an action that shows the page. The page will be a little more complex, so we call is ComplexPage, and the action ShowComplexPage. No changes to the Controller.
+We don't really want any front-end code in the actions. That's where the business logic should be. Instead, we create a page component and an action that shows the page. The page is a little more complex, so we call is ComplexPage, and the action ShowComplexPage. No changes to the Controller.
 
 #### ComplexPage.java
 
-In this example, we are creating a new component. This one happens to be an entire page, but it could be a part of a page or a skeleton that combines other components to form a page. The layout is a responsive three colums. Change browser width ans see what happens.
+In this example, we are creating a new component, a responsive three colums page. Change browser width ans see what happens.
 
 ```java
 import com.sparkney.dance.core.*;
@@ -193,7 +203,7 @@ public class ComplexPage extends Component{
     @Override
     public void render(Context context) throws Exception{
         final Media MOBILE = new Media(0,480);
-
+        
         Text menu = new Text("This might be a menu");
         Text content = new Text("This is some content");
         Text footer = new Text("Here goes the footer");
@@ -249,6 +259,19 @@ public class ViewComplexPage extends AbstractAction{
     }
 }
 ```
+
+```
+http://myhost/danceguide/viewComplexPage
+```
+
+
+
+
+
+
+
+
+
 
 
 
