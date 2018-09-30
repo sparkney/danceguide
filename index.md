@@ -56,7 +56,7 @@ Just download the SparkneyDance04.jar file and add it in your class path. TODO:L
 # Getting started
 All you need to get started is few lines of code. The Hello World example is two classes, the controller and an action. The controller mapps a request to the action. For this example, controller and actions need to be in the same package.
 
-#### Controller.java
+**Controller.java**
 
 ```java
 import com.sparkney.dance.core.AbstractController;
