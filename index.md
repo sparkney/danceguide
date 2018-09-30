@@ -76,7 +76,7 @@ public class Controller extends AbstractController{
 
 ```
 
-#### HelloWorldAction.java
+**HelloWorldAction.java**
 
 ```java
 import com.sparkney.dance.core.*;
@@ -107,7 +107,7 @@ where *myhost* may be something like localhost:8080 if you run locally, or your 
 
 That's it. From here, we just expand the the concept. To make a link, we add a new action with few more lines.
 
-#### LinkAction.java
+**LinkAction.java**
 
 ```java
 import com.sparkney.dance.core.*;
@@ -142,6 +142,7 @@ LinkPanel is used to create links, and we link to the HelloWorldAction from prev
 
 What about adding components together? This is where layout manages come in handy. They are used to compose content and manage layout properties. Content can be any component, a text, link, or other layout managers. By combining layout manages, complex layouts can easily be achieved.
 
+**LayoutAction.java**
 ```java
 import com.sparkney.dance.core.*;
 import com.sparkney.dance.gui.base.*;
@@ -184,7 +185,7 @@ http://myhost/danceguide/layoutAction
 
 We don't really want any front-end code in the actions. That's where the business logic should be. Instead, we create a page component and an action that shows the page. The page is a little more complex, so we call is ComplexPage, and the action ShowComplexPage. No changes to the Controller.
 
-#### ComplexPage.java
+**ComplexPage.java**
 
 In this example, we are creating a new component, a responsive three colums page.
 
@@ -233,7 +234,7 @@ public class ComplexPage extends Component{
 }
 ```
 
-#### ViewComplexPage.java
+**ViewComplexPage.java**
 
 Since actions do stuff, it's a good idea to begin the name with a descriptive verb.
 
