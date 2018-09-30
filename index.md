@@ -180,7 +180,7 @@ http://myhost/danceguide/layoutAction
 ```
 
 <a name="elaborate_example"></a>
-# Elaborate example
+## Elaborate example
 
 We don't really want any front-end code in the actions. That's where the business logic should be. Instead, we create a page component and an action that shows the page. The page is a little more complex, so we call is ComplexPage, and the action ShowComplexPage. No changes to the Controller.
 
