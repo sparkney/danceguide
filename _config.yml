@@ -1,5 +1,7 @@
 theme: jekyll-theme-cayman
 
+markdown: kramdown
+
 title: Welcome to the Java Dance architecture
 Description: This is a description
 
