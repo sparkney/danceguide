@@ -185,9 +185,9 @@ http://myhost/danceguide/layoutAction
 
 We don't really want any front-end code in the actions. That's where the business logic should be. Instead, we create a page component and an action that shows the page. The page is a little more complex, so we call is ComplexPage, and the action ShowComplexPage. No changes to the Controller.
 
-**ComplexPage.java**
-
 In this example, we are creating a new component, a responsive three colums page.
+
+**ComplexPage.java**
 
 ```java
 import com.sparkney.dance.core.*;
@@ -234,9 +234,10 @@ public class ComplexPage extends Component{
 }
 ```
 
-**ViewComplexPage.java**
 
 Since actions do stuff, it's a good idea to begin the name with a descriptive verb.
+
+**ViewComplexPage.java**
 
 ```java
 import com.sparkney.dance.core.*;
@@ -260,7 +261,7 @@ Execute tha ViewComplexPage action and checkout the result.
 http://myhost/danceguide/viewComplexPage
 ```
 
- Change browser width and see what happens.
+Change browser width and see what happens.
 
 
 
