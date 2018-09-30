@@ -7,9 +7,8 @@
 [Getting started](#getting_started)  
 [Elaborate example](#elaborate_example)  
 
+* TOC
 {:toc}
-
-[TOC]
 
 <a name="what_is_dance"></a>
 # What is Dance?
