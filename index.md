@@ -3,19 +3,19 @@
 * TOC
 {:toc}
 
-<a name="what_is_dance"></a>
 # What is Dance?
 Pure Java web development.
 
 Dance is an open source, very simple, yet powerful, component based architecture for developing web applicatoins in pure Java.
 
-As HTML, CSS and JavaScript development becomes increasingly complex, the idea is to boost productivity by creating a consistent API, hide complexity, and at the same time bring all of Java's features to front-end programming. 
+....As HTML, CSS and JavaScript development becomes increasingly complex, the idea is to boost productivity by creating a consistent API, hide complexity, and at the same time bring all of Java's features to front-end programming. 
 
-<a name="features"></a>
 # Features
+TODO: Break up into subcategories.
 This is in comparison to classic HTML/CSS/JavaScript development.
 * Obviously, no cumbersome and time consuming HTML and CSS handcrafting.
 * No messy mix of markup and programming code.
+* Layout managers handle component layout.
 * Seamless integration between front-end and back-end.
 * Less room for human errors when HTML, CSS and JavaScript are automatically generated.
 * Component based development.
@@ -40,19 +40,15 @@ This is in comparison to classic HTML/CSS/JavaScript development.
 * Generated code is automatically minimized.
 * And counting ...
 
-<a name="disclaimer"></a>
 # Disclaimer
 The author takes no responsibility for use of this software. Use this software at your own risk.
 
-<a name="requirements"></a>
 # Requirements
 A Java EE servlet 3.0 container server, like Tomcat, Jetty, GlassFish, JBoss, WebLogic, etc.
 
-<a name="installation"></a>
 # Installation
 Just download the SparkneyDance04.jar file and add it in your class path. TODO:Link
 
-<a name="getting_started"></a>
 # Getting started
 All you need is few lines of code. The Hello World example is two classes, the controller and an action. The controller mapps a request to the action. For this example, controller and actions need to be in the same package.
 
