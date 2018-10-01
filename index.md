@@ -376,13 +376,13 @@ public class ViewComplexPage extends AbstractAction{
 
 <a href="responsive_page.html" target="_blank">See the result</a>
 
-Execute tha ViewComplexPage action and checkout the result.
+Execute the ViewComplexPage action and checkout the result. Try changing browser width and see what happens.
+
 
 ```
 http://myhost/danceguide/viewComplexPage
 ```
 
-Change browser width and see what happens.
 
 
 
