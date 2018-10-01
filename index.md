@@ -243,7 +243,7 @@ This example is similar to the previous one, and is shows how to create and subm
 import com.sparkney.dance.core.*;
 import com.sparkney.dance.gui.base.*;
 
-public class ParameterAction extends AbstractAction{
+public class FormAction extends AbstractAction{
 
     @Override
     public void init(){
@@ -253,34 +253,40 @@ public class ParameterAction extends AbstractAction{
     @Override
     public Component perform(Context context) throws Exception{
         
-        //Get the parameter value
+        //Get the parameter
         String paramValue = context.getRequest().getParameter("paramName");
+                
+        //Create a text field
+        TextField textField = new TextField();
+        textField.setName("paramName");
+        textField.setValue("You submitted the form");
         
-        //Create an action and add a parameter
-        ParameterAction action = new ParameterAction();
-        action.addParameter("paramName", "You clicked the action button");
+        //Create a submit button
+        Button submitButton = new Button();
+        submitButton.setText("Submit");
+        submitButton.setOnClick(new SubmitForm(new FormAction()));
         
-        //Create a button to execute the action
-        Button actionButton = new Button();
-        actionButton.setText("Action »");
-        actionButton.setOnClick(action);
-        
-        //Layout the component
+        //Layout the components
         VerticalLayout layout = new VerticalLayout();
         layout.setPadding(10);
         layout.setGap(5);
-        layout.add(actionButton);
+        layout.add(textField);
+        layout.add(submitButton).setHAlign(Align.RIGHT);
         
         //If there is a parameter value, add it to the layout
         if(paramValue!=null){
             layout.add(new Text(paramValue));
         }
+
+        //This is a form, don't forget the form panel
+        FormPanel formPanel = new FormPanel();
+        formPanel.setContent(layout);
         
         //We always need the window panel
         WindowPanel windowPanel = new WindowPanel();
-        windowPanel.setContent(layout);
+        windowPanel.setContent(formPanel);
 
-        return layout;
+        return windowPanel;
     }
 }
 ```
