@@ -54,9 +54,9 @@ Just download the SparkneyDance04.jar file and add it in your class path. TODO:L
 
 <a name="getting_started"></a>
 # Getting started
-All you need to get started is few lines of code. The Hello World example is two classes, the controller and an action. The controller mapps a request to the action. For this example, controller and actions need to be in the same package.
+All you need is few lines of code. The Hello World example is two classes, the controller and an action. The controller mapps a request to the action. For this example, controller and actions need to be in the same package.
 
-**Controller.java**
+*Controller.java*
 
 ```java
 import com.sparkney.dance.core.AbstractController;
@@ -76,7 +76,7 @@ public class Controller extends AbstractController{
 
 ```
 
-**HelloWorldAction.java**
+*HelloWorldAction.java*
 
 ```java
 import com.sparkney.dance.core.*;
@@ -107,7 +107,7 @@ where *myhost* may be something like localhost:8080 if you run locally, or your 
 
 That's it. From here, we just expand the the concept. To make a link, we add a new action with few more lines.
 
-**LinkAction.java**
+*LinkAction.java*
 
 ```java
 import com.sparkney.dance.core.*;
@@ -142,7 +142,7 @@ LinkPanel is used to create links, and we link to the HelloWorldAction from prev
 
 What about adding components together? This is where layout manages come in handy. They are used to compose content and manage layout properties. Content can be any component, a text, link, or other layout managers. By combining layout manages, complex layouts can easily be achieved.
 
-**LayoutAction.java**
+*LayoutAction.java*
 ```java
 import com.sparkney.dance.core.*;
 import com.sparkney.dance.gui.base.*;
@@ -187,7 +187,7 @@ We don't really want any front-end code in the actions. That's where the busines
 
 In this example, we are creating a new component, a responsive three colums page.
 
-**ComplexPage.java**
+*ComplexPage.java*
 
 ```java
 import com.sparkney.dance.core.*;
@@ -236,7 +236,7 @@ public class ComplexPage extends Component{
 
 Since actions do stuff, it's a good idea to begin the name with a descriptive verb.
 
-**ViewComplexPage.java**
+*ViewComplexPage.java*
 
 ```java
 import com.sparkney.dance.core.*;
