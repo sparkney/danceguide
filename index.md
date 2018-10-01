@@ -127,7 +127,7 @@ public class LinkAction extends AbstractAction{
 
         LinkPanel linkPanel = new LinkPanel();
         linkPanel.setContent(new Text("Click to show Hello world"));
-        linkPanel.setOnClick(new HelloWorldAction());
+        linkPanel.onClick(new HelloWorldAction());
 
         return linkPanel;
     }
@@ -213,7 +213,7 @@ public class ParameterAction extends AbstractAction{
         //Create a button to execute the action
         Button actionButton = new Button();
         actionButton.setText("Action »");
-        actionButton.setOnClick(action);
+        actionButton.onClick(action);
         
         //Layout the component
         VerticalLayout layout = new VerticalLayout();
@@ -270,7 +270,7 @@ public class FormAction extends AbstractAction{
         //Create a submit button
         Button submitButton = new Button();
         submitButton.setText("Submit");
-        submitButton.setOnClick(new SubmitForm(new FormAction()));
+        submitButton.onClick(new SubmitForm(new FormAction()));
         
         //Layout the components
         VerticalLayout layout = new VerticalLayout();
