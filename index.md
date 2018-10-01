@@ -105,7 +105,7 @@ http://myhost/danceguide/helloWorldAction
 
 where *myhost* may be something like localhost:8080 if you run locally, or your domain name if you run on a remote server.
 
-That's it. From here, we just expand the the concept. To make a link, we add a new action with few more lines.
+From here, we just expand the the concept. To make a link, we add a new action with two more lines.
 
 *LinkAction.java*
 
@@ -138,11 +138,12 @@ public class LinkAction extends AbstractAction{
 http://myhost/danceguide/linkAction
 ```
 
-LinkPanel is used to create links, and we link to the HelloWorldAction from previous exemple. Clickning the link will execute the HelloWorldAction.
+LinkPanel is used to create a link to HelloWorldAction from previous exemple. Clickning the link will execute the HelloWorldAction.
 
-What about adding components together? This is where layout manages come in handy. They are used to compose content and manage layout properties. Content can be any component, a text, link, or other layout managers. By combining layout manages, complex layouts can easily be achieved.
+To add components together, we use layout manages. They are used to compose content and manage layout properties. Content can be any component, a text, link, or other layout managers. By combining layout manages, complex layouts can easily be achieved.
 
 *LayoutAction.java*
+
 ```java
 import com.sparkney.dance.core.*;
 import com.sparkney.dance.gui.base.*;
@@ -180,12 +181,9 @@ public class LayoutAction extends AbstractAction{
 http://myhost/danceguide/layoutAction
 ```
 
-<a name="elaborate_example"></a>
-## Elaborate example
+## Responsive example
 
-We don't really want any front-end code in the actions. That's where the business logic should be. Instead, we create a page component and an action that shows the page. The page is a little more complex, so we call is ComplexPage, and the action ShowComplexPage. No changes to the Controller.
-
-In this example, we are creating a new component, a responsive three colums page.
+We don't really want any front-end code in the actions. That's where the business logic should be. Instead, we create a page component and an action that shows the page. It's a responsive three colums page. No changes to the Controller.
 
 *ComplexPage.java*
 
@@ -254,6 +252,9 @@ public class ViewComplexPage extends AbstractAction{
     }
 }
 ```
+
+<a href="responsive_page.html" target="_blank">See the result</a>
+
 Execute tha ViewComplexPage action and checkout the result.
 
 ```
