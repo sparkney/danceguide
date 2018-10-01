@@ -54,6 +54,8 @@ Just download the SparkneyDance04.jar file and add it in your class path. TODO:L
 # Getting started
 All you need is few lines of code. The Hello World example is two classes, the controller and an action. The controller mapps a request to the action. For this example, controller and actions need to be in the same package.
 
+## Hello world
+
 *Controller.java*
 
 ```java
@@ -103,7 +105,9 @@ http://myhost/danceguide/helloWorldAction
 
 where *myhost* may be something like localhost:8080 if you run locally, or your domain name if you run on a remote server.
 
-From here, we just expand the the concept. To make a link, we add a new action with two more lines.
+## Create a link
+
+To make a link, we create a new action with two more lines.
 
 *LinkAction.java*
 
@@ -137,6 +141,8 @@ http://myhost/danceguide/linkAction
 ```
 
 LinkPanel is used to create a link to HelloWorldAction from previous exemple. Clickning the link will execute the HelloWorldAction.
+
+## Layout manager
 
 To add components together, we use layout manages. They are used to compose content and manage layout properties. Content can be any component, a text, link, or other layout managers. By combining layout manages, complex layouts can easily be achieved.
 
