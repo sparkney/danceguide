@@ -197,7 +197,7 @@ public class ParameterAction extends AbstractAction{
     @Override
     public Component perform(Context context) throws Exception{
         
-        //Get the parameter value
+        //Get the request parameter value
         String paramValue = context.getRequest().getParameter("paramName");
         
         //Create an action and add a parameter
@@ -253,7 +253,7 @@ public class FormAction extends AbstractAction{
     @Override
     public Component perform(Context context) throws Exception{
         
-        //Get the parameter
+        //Get the request parameter value
         String paramValue = context.getRequest().getParameter("paramName");
                 
         //Create a text field
