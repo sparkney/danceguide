@@ -179,7 +179,119 @@ public class LayoutAction extends AbstractAction{
 http://myhost/danceguide/layoutAction
 ```
 
-## Responsive example
+## Action parameters
+
+This example shows how to send parameters with an action. Clicking the button will execute the action itself and print the parameter.
+
+```java
+import com.sparkney.dance.core.*;
+import com.sparkney.dance.gui.base.*;
+
+public class ParameterAction extends AbstractAction{
+
+    @Override
+    public void init(){
+        setActionMapper(Controller.instance.getActionMapper());
+    }
+    
+    @Override
+    public Component perform(Context context) throws Exception{
+        
+        //Get the parameter value
+        String paramValue = context.getRequest().getParameter("paramName");
+        
+        //Create an action and add a parameter
+        ParameterAction action = new ParameterAction();
+        action.addParameter("paramName", "You clicked the action button");
+        
+        //Create a button to execute the action
+        Button actionButton = new Button();
+        actionButton.setText("Action »");
+        actionButton.setOnClick(action);
+        
+        //Layout the component
+        VerticalLayout layout = new VerticalLayout();
+        layout.setPadding(10);
+        layout.setGap(5);
+        layout.add(actionButton);
+        
+        //If there is a parameter value, add it to the layout
+        if(paramValue!=null){
+            layout.add(new Text(paramValue));
+        }
+        
+        //We always need the window panel
+        WindowPanel windowPanel = new WindowPanel();
+        windowPanel.setContent(layout);
+
+        return layout;
+    }
+}
+```
+
+<a href="parameter_action.html" target="_blank">See the result</a>
+
+```
+http://myhost/danceguide/parameterAction
+```
+
+## A simple form
+
+This example is similar to the previous one, and is shows how to create and submit a form.
+
+```java
+import com.sparkney.dance.core.*;
+import com.sparkney.dance.gui.base.*;
+
+public class ParameterAction extends AbstractAction{
+
+    @Override
+    public void init(){
+        setActionMapper(Controller.instance.getActionMapper());
+    }
+    
+    @Override
+    public Component perform(Context context) throws Exception{
+        
+        //Get the parameter value
+        String paramValue = context.getRequest().getParameter("paramName");
+        
+        //Create an action and add a parameter
+        ParameterAction action = new ParameterAction();
+        action.addParameter("paramName", "You clicked the action button");
+        
+        //Create a button to execute the action
+        Button actionButton = new Button();
+        actionButton.setText("Action »");
+        actionButton.setOnClick(action);
+        
+        //Layout the component
+        VerticalLayout layout = new VerticalLayout();
+        layout.setPadding(10);
+        layout.setGap(5);
+        layout.add(actionButton);
+        
+        //If there is a parameter value, add it to the layout
+        if(paramValue!=null){
+            layout.add(new Text(paramValue));
+        }
+        
+        //We always need the window panel
+        WindowPanel windowPanel = new WindowPanel();
+        windowPanel.setContent(layout);
+
+        return layout;
+    }
+}
+```
+
+<a href="form_action.html" target="_blank">See the result</a>
+
+```
+http://myhost/danceguide/formAction
+```
+
+## Responsive layout
 
 We don't really want any front-end code in the actions. That's where the business logic should be. Instead, we create a page component and an action that shows the page. It's a responsive three colums page. No changes to the Controller.
 
@@ -228,7 +340,6 @@ public class ComplexPage extends Component{
     }
 }
 ```
-
 
 Since actions do stuff, it's a good idea to begin the name with a descriptive verb.
 
