@@ -185,7 +185,7 @@ public class LayoutAction extends AbstractAction{
 http://myhost/danceguide/layoutAction
 ```
 
-## Action parameters
+## Action parameter
 
 This example shows how to send parameters with an action. Clicking the button will execute the action itself and print the parameter.
 
@@ -203,7 +203,7 @@ public class ParameterAction extends AbstractAction{
     @Override
     public Component perform(Context context) throws Exception{
         
-        //Get the request parameter value
+        //Get the parameter value
         String paramValue = context.getRequest().getParameter("paramName");
         
         //Create an action and add a parameter
@@ -230,7 +230,7 @@ public class ParameterAction extends AbstractAction{
         WindowPanel windowPanel = new WindowPanel();
         windowPanel.setContent(layout);
 
-        return layout;
+        return windowPanel;
     }
 }
 ```
