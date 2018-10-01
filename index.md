@@ -198,7 +198,7 @@ public class ComplexPage extends Component{
     @Override
     public void render(Context context) throws Exception{
         final Media MOBILE = new Media(0,480);
-        
+
         Text menu = new Text("This might be a menu");
         Text content = new Text("This is some content");
         Text footer = new Text("Here goes the footer");
@@ -213,8 +213,7 @@ public class ComplexPage extends Component{
         layout.setMaxWidth(800);
         layout.setPadding(10);
         layout.setCellPadding(10);
-        layout.setGap(10);
-        layout.setGap(MOBILE,20);
+        layout.setGap(10).setGap(MOBILE,20);
         layout.setCellBorder(new Border());
         layout.add(content).setRelativeWidth(33).setRelativeWidth(MOBILE, 100);
         layout.add(image).setRelativeWidth(33).setRelativeWidth(MOBILE, 100);
