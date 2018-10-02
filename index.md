@@ -43,7 +43,7 @@ This is in comparison to classic HTML/CSS/JavaScript development.
 * And counting ...
 
 # Disclaimer
-This software is distributed under the [BSD 3-Clause License](/LICENSE)
+This software is distributed under the [BSD 3-Clause License](/LICENSE.html)
 
 # Requirements
 A Java EE servlet 3.0 container server, like Tomcat, Jetty, GlassFish, JBoss, WebLogic, etc.
