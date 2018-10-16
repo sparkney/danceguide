@@ -56,9 +56,9 @@ A Java EE servlet 3.0 container server, like Tomcat, Jetty, GlassFish, JBoss, We
 Just download the SparkneyDance04.jar file and add it to your class path. <span style="color:lightblue">TODO: Link.</span>
 
 # Getting started
-All you need is few lines of code. The Hello World example is two classes, the controller and an action. The controller mapps a request to the action. For this example, controller and actions need to be in the same package.
 
 ## Hello world
+The Hello World example is two classes, the controller and an action. The controller mapps a request to the action. For this example, controller and actions need to be in the same package.
 
 *Controller.java*
 
@@ -99,6 +99,7 @@ public class HelloWorldAction extends AbstractAction{
     }
 }
 ```
+
 <a href="hello_world_action.html" target="_blank">See the result</a>
 
 Fire up your favorite servlet container and enter this URL in the web browser
@@ -111,7 +112,7 @@ where *myhost* may be something like localhost:8080 if you run locally, or your 
 
 ## Create a link
 
-To make a link, we create a new action with two more lines.
+To make a link, we create a new action.
 
 *LinkAction.java*
 
@@ -191,7 +192,7 @@ http://myhost/danceguide/layoutAction
 
 ## Action parameters
 
-This example shows how to send parameters with an action. Clicking the button will execute the action itself and print the parameter.
+This example shows how to send parameters with an action to the server. Clicking the button will execute the action itself and print the parameter value.
 
 *ParameterAction.java*
 
@@ -249,7 +250,7 @@ http://myhost/danceguide/parameterAction
 
 ## A simple form
 
-This example is similar to the previous one, and is shows how to create and submit a form.
+This example is similar to the previous one. It shows how to create and submit a form.
 
 *FormAction.java*
 
@@ -296,7 +297,7 @@ public class FormAction extends AbstractAction{
         FormPanel formPanel = new FormPanel();
         formPanel.setContent(layout);
         
-        //We always need the window panel
+        //Window panel is always needed to render a document
         WindowPanel windowPanel = new WindowPanel();
         windowPanel.setContent(formPanel);
 
@@ -313,15 +314,15 @@ http://myhost/danceguide/formAction
 
 ## Responsive layout
 
-We don't really want any front-end code in the actions. That's where the business logic should be. Instead, we create a page component and an action that shows the page. It's a responsive three colums page. No changes to the Controller.
+We don't really want any front-end code in the actions. That's where the business logic should be. Instead, we create a page component and an action that views the page. This is a responsive three colums page. We keep using the same Controller.
 
-*ComplexPage.java*
+*ResponsivePage.java*
 
 ```java
 import com.sparkney.dance.core.*;
 import com.sparkney.dance.gui.base.*;
 
-public class ComplexPage extends Component{
+public class ResponsivePage extends Component{
     
     @Override
     public void render(Context context) throws Exception{
@@ -355,7 +356,6 @@ public class ComplexPage extends Component{
 
         WindowPanel windowPanel = new WindowPanel();
         windowPanel.setContent(centerLayout);
-        windowPanel.addMeta("viewport","width=device-width,initial-scale=1");
         windowPanel.render(context);
     }
 }
@@ -363,12 +363,12 @@ public class ComplexPage extends Component{
 
 Since actions do stuff, it's a good idea to begin the name with a descriptive verb.
 
-*ViewComplexPage.java*
+*ViewResponsivePage.java*
 
 ```java
 import com.sparkney.dance.core.*;
 
-public class ViewComplexPage extends AbstractAction{
+public class ViewResponsivePage extends AbstractAction{
     
     @Override
     public void init(){
@@ -377,7 +377,7 @@ public class ViewComplexPage extends AbstractAction{
 
     @Override
     public Component perform(Context context) throws Exception{
-        return new ComplexPage();
+        return new ResponsivePage();
     }
 }
 ```
