@@ -53,7 +53,7 @@ This software is distributed under the [BSD 3-Clause License](/LICENSE.html)
 A Java EE servlet 3.0 container server, like Tomcat, Jetty, GlassFish, JBoss, WebLogic, etc.
 
 # Installation
-Just download the SparkneyDance04.jar file and add it in your class path. TODO:Link
+Just download the SparkneyDance04.jar file and add it to your class path. <span style="color:lightblue">TODO: Link.</span>
 
 # Getting started
 All you need is few lines of code. The Hello World example is two classes, the controller and an action. The controller mapps a request to the action. For this example, controller and actions need to be in the same package.
