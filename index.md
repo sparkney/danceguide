@@ -385,9 +385,11 @@ http://myhost/danceguide/viewComplexPage
 
 ## Ajax actions
 
-An ajax actions typically returns a component that is placed within an existing element. An ajax action works alot like normal actions, but we need to state what target element the result should end up in. To achieve this, we give the target element an ID, and we tell the ajax actions to put the result in the element bu that ID.
+An ajax actions typically returns a component that updates an existing element. An ajax action works alot like standard actions, only we need to state what target element the result should end up in. To achieve this, we give the target element an ID, and we tell the ajax actions to put the result in the element by that ID.
 
-First we create the ajax action. It extracts a message papameter, calculate the number of characters in the message an returns a result av a component.
+First we create the ajax action. It extracts a message parameter, calculates the number of characters in the message, and returns a result as a component.
+
+*AjaxSubmit.java*
 
 ```java
 import com.sparkney.dance.core.*;
@@ -416,7 +418,6 @@ public class AjaxSubmit extends AjaxAction{
 }
 
 ```
-
 
 Then, we need a page with a form, from which we can submit the ajax action. Note that we set the target element ID for the ajax axtion. We also create an empty cell (Space) and give it the same ID. 
 
