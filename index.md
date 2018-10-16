@@ -383,7 +383,7 @@ Execute the ViewComplexPage action and checkout the result. Try changing browser
 http://myhost/danceguide/viewComplexPage
 ```
 
-## Ajax action
+## Ajax actions
 
 An ajax actions typically returns a component that is placed within an existing element. An ajax action works alot like normal actions, but we need to state what target element the result should end up in. To achieve this, we give the target element an ID, and we tell the ajax actions to put the result in the element bu that ID.
 
