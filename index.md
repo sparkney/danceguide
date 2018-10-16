@@ -91,7 +91,7 @@ public class HelloWorldAction extends AbstractAction{
 
     @Override
     public Component perform(Context context) throws Exception{
-        return new Text("Hello world!");
+        return new Text("Hello, world!");
     }
 }
 ```
@@ -142,9 +142,9 @@ http://myhost/danceguide/linkAction
 
 LinkPanel is used to create a link to HelloWorldAction from previous exemple. Clickning the link will execute the HelloWorldAction.
 
-## Layout manager
+## Layout managers
 
-To add components together, we use layout manages. They are used to compose content and manage layout properties. Content can be any component, a text, link, or other layout managers. By combining layout manages, complex layouts can easily be achieved.
+To add components together, we use layout manages. They compose content and manage layout properties. Content can be any component, a text, link, or other layout managers. By combining layout manages, complex layouts can easily be achieved.
 
 *LayoutAction.java*
 
