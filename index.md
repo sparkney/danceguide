@@ -383,13 +383,24 @@ Execute the ViewComplexPage action and checkout the result. Try changing browser
 http://myhost/danceguide/viewComplexPage
 ```
 
+## Ajax
+
+We can use ajax action to do an ajax request. Ajax actions returns a component. Since the document is not reloaded, we have to define in what element the result is going to be placed. This element called the target element.
+
+```java
+
+```
+
+
+```java
+
+```
 
 
 
+```java
 
-
-
-
+```
 
 
 
