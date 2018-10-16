@@ -496,16 +496,19 @@ We are working on an implementation of WebSocket in Dance, that will allow the s
 
 # Brief history
 
-The idea of Dance was borne in 2001-2002 and origins in a lot of frustration with web development at the time. We wated  object oriented and component based tools for front-end. We got CSS.
+The idea of Dance was borne in 2001-2002, and origins in a lot of frustration with web development at the time. We wanted object oriented and component based tools for front-end. We got CSS. Layout became even worse then using tables.
 
-Java developers journal
+I had been thinking of some sort of component based system for some time, that would help a lot. We were already using Sun Microsystem MVC2 blueprint. But we still had to deal with time consuming HTML/CSS.
 
-Sun Microsystem MVC2 blueprint
+Or even worse, we had do deal with subcontractors and non-programmers  HTML/CSS. Often,  those were art directors at advertising agencies that had become sort of web agencies. Their job was to maintain the HTML/CSS in frontend, so we were stuck with that. To solve this problem, we created a new project model that we called WebManual. In short, it's like an extended graphic manual defining all the graphic components in a web application. So the people that were experts in graphic design developed the  WebManual, and we, who had some programming skills, did the programming, and most importantly, the HTML/CSS. This worked out very well.
 
-Modal dialogs
+Now, we were not bound to HTML/CSS and we could start thinking out of the box. What finally sparked the idea of Dance was an article I read in Java Developer's Journal, where a team, of some obscure reason that I don't remember, put some of the HTML code in a java object. Why not go all the way and put all of the HTML/CSS in objects, add them together like in Swing, and render them recursively?
 
-WebManual
+I didn't sleep until I had a working prototype. Since all controllers was rendered in a context and could be switched off , it even had decent modal dialogs, which was otherwise not possible at the time.
 
+A few years later we did the first commercial project with Dance. Since then it has been improved over time, and we have had no trouble implementing new web technologies.
+
+Ironically, since I maintain Dance, I have had to become an expert in the underlying technologies that tried to get rid of. Maybe WebAssembly will save me in the future. :)
 
 # Contact
 
