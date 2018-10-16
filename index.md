@@ -419,7 +419,7 @@ public class AjaxSubmit extends AjaxAction{
 
 ```
 
-Then, we need a page with a form, from which we can submit the ajax action. Note that we set the target element ID for the ajax axtion. We also create an empty cell (Space) and give it the same ID. 
+We create a page with a form, from which we can submit the ajax action. Note how we set the target element ID for the ajax axtion. We also create an empty layout cell and give it the same ID. 
 
 *AjaxPage.java*
 
@@ -457,7 +457,7 @@ public class AjaxPage extends Component{
 }
 ```
 
-Finally, we create a standard action that views the page.
+Finally, we create a standard action for viewing our page.
 
 ```java
 import com.sparkney.dance.core.*;
