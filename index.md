@@ -492,7 +492,7 @@ When you type in the text field, ajax requests are sent to the server. The serve
 
 ## WebSocket
 
-We are working on an implementation of WebSocket in Dance that will allow the server to push updates the client. Eventually, there will be a simple chat example here.
+We are working on an implementation of WebSocket in Dance, that will allow the server to push updates the client. Eventually, there will be a simple chat example here.
 
 
 
