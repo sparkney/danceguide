@@ -490,7 +490,9 @@ http://myhost/danceguide/viewAjaxPage
 
 When you type in the text field, ajax requests are sent to the server. The server returns a component that is placed in the target element.  
 
+## WebSocket
 
+We are working on an implementation of WebSocket in Dance that will allow the server to push updates the client. Eventually, there will be a simple chat example here.
 
 
 
