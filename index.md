@@ -185,7 +185,7 @@ public class LayoutAction extends AbstractAction{
 http://myhost/danceguide/layoutAction
 ```
 
-## Action parameter
+## Action parameters
 
 This example shows how to send parameters with an action. Clicking the button will execute the action itself and print the parameter.
 
