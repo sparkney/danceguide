@@ -8,7 +8,7 @@ Pure Java web development.
 
 Dance is an open source, very simple, yet powerful, component based architecture for developing web applicatoins in pure Java.
 
-As HTML, CSS and JavaScript development becomes increasingly complex, the idea is to boost productivity by creating a consistent API, hide complexity, and at the same time bring all of Java's features to front-end programming. 
+As HTML, CSS and JavaScript development becomes increasingly complex, the idea is to boost productivity by creating a consistent API, hide complexity, and at the same time, bring all of Java's features to front-end programming.
 
 # Features
 
@@ -41,6 +41,10 @@ This is in comparison to classic HTML/CSS/JavaScript development.
 * No need to load huge CSS or JavaScript libraries or plugins. 
 * Generated code is automatically minimized.
 * And counting ...
+
+# Contribute
+
+We appricate all kinds of comments and suggestions on how to make improve the code. If you like to contribute some code, you're more then welcome. Please contact the maintainer. 
 
 # Disclaimer
 This software is distributed under the [BSD 3-Clause License](/LICENSE.html)
