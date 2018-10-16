@@ -384,7 +384,7 @@ public class ViewResponsivePage extends AbstractAction{
 
 <a href="responsive_page.html" target="_blank">See the result</a>
 
-Execute the ViewComplexPage action and checkout the result. Try changing browser width and see what happens.
+Execute the ViewComplexPage action and take a look at the result. Try changing browser width and see what happens.
 
 
 ```
@@ -393,7 +393,7 @@ http://myhost/danceguide/viewComplexPage
 
 ## Ajax actions
 
-An ajax actions typically returns a component that updates an existing element. An ajax action works alot like standard actions, only we need to state what target element the result should end up in. To achieve this, we give the target element an ID, and we tell the ajax actions to put the result in the element by that ID.
+An ajax action is an asynchronous request that typically returns a component that updates an existing element on the page. An ajax action works alot like standard actions, only we need to state what target element the result should end up in. To achieve this, we give the target element an ID, and we tell the ajax actions to put the result in the element by that ID.
 
 First we create the ajax action. It extracts a message parameter, calculates the number of characters in the message, and returns a result as a component.
 
@@ -427,7 +427,7 @@ public class AjaxSubmit extends AjaxAction{
 
 ```
 
-We create a page with a form, from which we can submit the ajax action. Note how we set the target element ID for the ajax axtion. We also create an empty layout cell and give it the same ID. 
+Then, we create a page with a form, from which we can submit the ajax action. Note how we set the target element ID for the ajax axtion. We also create an empty layout cell and give it the same ID. 
 
 *AjaxPage.java*
 
