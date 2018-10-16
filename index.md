@@ -395,7 +395,7 @@ http://myhost/danceguide/viewComplexPage
 
 An ajax action is an asynchronous request that typically returns a component that updates an existing element on the page. An ajax action works alot like standard actions, only we need to state what target element the result should end up in. To achieve this, we give the target element an ID, and we tell the ajax actions to put the result in the element by that ID.
 
-First we create the ajax action. It extracts a message parameter, calculates the number of characters in the message, and returns a result as a component.
+First we create the ajax action. It extracts a message parameter, calculates the number of characters in the message, and returns the result as a component.
 
 *AjaxSubmit.java*
 
@@ -427,7 +427,7 @@ public class AjaxSubmit extends AjaxAction{
 
 ```
 
-Then, we create a page with a form, from which we can submit the ajax action. Note how we set the target element ID for the ajax axtion. We also create an empty layout cell and give it the same ID. 
+Then, we create a page containing a form, from which we can submit the ajax action. Note how we set the target element ID for the ajax action. We also create an empty layout cell and give it the same ID.
 
 *AjaxPage.java*
 
@@ -440,7 +440,7 @@ public class AjaxPage extends Component{
     @Override
     public void render(Context context) throws Exception{
         AjaxSubmit submitAjax = new AjaxSubmit();
-        submitAjax.setTargetElementId("textbox");
+        submitAjax.setTargetElementId("result");
 
         TextField textField = new TextField();
         textField.setRelativeWidth(100);
@@ -453,7 +453,7 @@ public class AjaxPage extends Component{
         layout.setWidth(200);
         layout.add(new Text("Enter a message"));
         layout.add(textField);
-        layout.add(new Space()).setId("textbox");
+        layout.add(new Space()).setId("result");
         
         FormPanel formPanel = new FormPanel();
         formPanel.setContent(layout);
@@ -465,7 +465,7 @@ public class AjaxPage extends Component{
 }
 ```
 
-Finally, we create a standard action for viewing our page.
+Finally, we create a standard action for viewing our ajax page.
 
 ```java
 import com.sparkney.dance.core.*;
@@ -488,7 +488,7 @@ public class ViewAjaxPage extends AbstractAction{
 http://myhost/danceguide/viewAjaxPage
 ```
 
-When you type some text in the text box, ajax requests are sent to the server. The server returns a component that is placed in the target element.  
+When you type in the text field, ajax requests are sent to the server. The server returns a component that is placed in the target element.  
 
 
 
