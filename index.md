@@ -12,7 +12,7 @@ As HTML, CSS and JavaScript development becomes increasingly complex, the idea i
 
 # Features
 
-<span style="color:lightblue">TODO: Break up into subcategories.</span>
+<span style="color:lightblue">TODO: Break up into subcategories. Remove redundancy. Shorten.</span>
 
 This is in comparison to classic HTML/CSS/JavaScript development.
 * Obviously, no cumbersome and time consuming HTML and CSS handcrafting.
