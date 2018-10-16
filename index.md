@@ -383,24 +383,105 @@ Execute the ViewComplexPage action and checkout the result. Try changing browser
 http://myhost/danceguide/viewComplexPage
 ```
 
-## Ajax
+## Ajax action
 
-We can use ajax action to do an ajax request. Ajax actions returns a component. Since the document is not reloaded, we have to define in what element the result is going to be placed. This element called the target element.
+An ajax actions typically returns a component that is placed within an existing element. An ajax action works alot like normal actions, but we need to state what target element the result should end up in. To achieve this, we give the target element an ID, and we tell the ajax actions to put the result in the element bu that ID.
+
+First we create the ajax action. It extracts a message papameter, calculate the number of characters in the message an returns a result av a component.
 
 ```java
+import com.sparkney.dance.core.*;
+import com.sparkney.dance.gui.base.*;
+
+public class AjaxSubmit extends AjaxAction{
+    
+    @Override
+    public void init(){
+        setActionMapper(Controller.instance.getActionMapper());
+    }
+
+    @Override
+    public Component perform(Context context) throws Exception{
+        String message = context.getRequest().getParameter("message");
+
+        String serverName = context.getRequest().getServerName();
+        
+        int lenght = message.length();
+        
+        Text resultText = new Text(serverName + " says message is "
+                + lenght + " characters long");
+                
+        return resultText;
+    }
+}
 
 ```
 
 
-```java
+Then, we need a page with a form, from which we can submit the ajax action. Note that we set the target element ID for the ajax axtion. We also create an empty cell (Space) and give it the same ID. 
 
-```
-
-
+*AjaxPage.java*
 
 ```java
+import com.sparkney.dance.core.*;
+import com.sparkney.dance.gui.base.*;
+
+public class AjaxPage extends Component{
+    
+    @Override
+    public void render(Context context) throws Exception{
+        AjaxSubmit submitAjax = new AjaxSubmit();
+        submitAjax.setTargetElementId("textbox");
+
+        TextField textField = new TextField();
+        textField.setRelativeWidth(100);
+        textField.setName("message");
+        textField.onKeyUp(new SubmitForm(submitAjax));
+        
+        VerticalLayout layout = new VerticalLayout();
+        layout.setPadding(10);
+        layout.setGap(5);
+        layout.setWidth(200);
+        layout.add(new Text("Enter a message"));
+        layout.add(textField);
+        layout.add(new Space()).setId("textbox");
+        
+        FormPanel formPanel = new FormPanel();
+        formPanel.setContent(layout);
+
+        WindowPanel windowPanel = new WindowPanel();
+        windowPanel.setContent(formPanel);
+        windowPanel.render(context);
+    }
+}
+```
+
+Finally, we create a standard action that views the page.
+
+```java
+import com.sparkney.dance.core.*;
+
+public class ViewAjaxPage extends AbstractAction{
+    
+    @Override
+    public void init(){
+        setActionMapper(Controller.instance.getActionMapper());
+    }
+
+    @Override
+    public Component perform(Context context) throws Exception{
+        return new AjaxPage();
+    }
+}
+```
 
 ```
+http://myhost/danceguide/viewAjaxPage
+```
+
+When you type some text in the text box, ajax requests are sent to the server. The server returns a component that is placed in the target element.  
+
+
 
 
 
