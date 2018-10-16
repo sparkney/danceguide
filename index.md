@@ -439,13 +439,13 @@ public class AjaxPage extends Component{
     
     @Override
     public void render(Context context) throws Exception{
-        AjaxSubmit submitAjax = new AjaxSubmit();
-        submitAjax.setTargetElementId("result");
+        AjaxSubmit ajaxSubmit = new AjaxSubmit();
+        ajaxSubmit.setTargetElementId("result");
 
         TextField textField = new TextField();
         textField.setRelativeWidth(100);
         textField.setName("message");
-        textField.onKeyUp(new SubmitForm(submitAjax));
+        textField.onKeyUp(new SubmitForm(ajaxSubmit));
         
         VerticalLayout layout = new VerticalLayout();
         layout.setPadding(10);
