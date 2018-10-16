@@ -6,7 +6,7 @@
 # What is Dance?
 Pure Java web development.
 
-Dance is an open source, very simple, yet powerful, component based architecture for developing web applicatoins in pure Java.
+Dance is an open source, very simple, yet powerful, component based architecture for developing web applications in pure Java.
 
 As HTML, CSS and JavaScript development becomes increasingly complex, the idea is to boost productivity by creating a consistent API, hide complexity, and at the same time, bring all of Java's features to front-end programming.
 
@@ -44,7 +44,7 @@ This is in comparison to classic HTML/CSS/JavaScript development.
 
 # Contribute
 
-We appricate all kinds of comments and suggestions on how to improve the project. If you like to contribute code, you're more then welcome. Please contact the maintainer. <span style="color:lightblue">TODO: Contact information.</span>
+We appreciate all kinds of comments and suggestions on how to improve the project. If you like to contribute code, you're more then welcome. Please contact the maintainer. <span style="color:lightblue">TODO: Contact information.</span>
 
 # Disclaimer
 This software is distributed under the [BSD 3-Clause License](/LICENSE.html)
@@ -58,7 +58,7 @@ Just download the SparkneyDance04.jar file and add it to your class path. <span 
 # Getting started
 
 ## Hello world
-The Hello World example is two classes, the controller and an action. The controller mapps a request to the action. For this example, controller and actions need to be in the same package.
+The Hello World example is two classes, the controller and an action. The controller maps a request to the action. For this example, controller and actions need to be in the same package.
 
 *Controller.java*
 
@@ -145,7 +145,7 @@ public class LinkAction extends AbstractAction{
 http://myhost/danceguide/linkAction
 ```
 
-LinkPanel is used to create a link to HelloWorldAction from previous exemple. Clickning the link will execute the HelloWorldAction.
+LinkPanel is used to create a link to HelloWorldAction from previous example. Clickning the link will execute the HelloWorldAction.
 
 ## Layout managers
 
@@ -314,7 +314,7 @@ http://myhost/danceguide/formAction
 
 ## Responsive layout
 
-We don't really want any front-end code in the actions. That's where the business logic should be. Instead, we create a page component and an action that views the page. This is a responsive three colums page. We keep using the same Controller.
+We don't really want any front-end code in the actions. That's where the business logic should be. Instead, we create a page component and an action that views the page. This is a responsive three columns page. We keep using the same Controller.
 
 *ResponsivePage.java*
 
@@ -393,7 +393,7 @@ http://myhost/danceguide/viewComplexPage
 
 ## Ajax actions
 
-An ajax action is an asynchronous request that typically returns a component that updates an existing element on the page. An ajax action works alot like standard actions, only we need to state what target element the result should end up in. To achieve this, we give the target element an ID, and we tell the ajax actions to put the result in the element by that ID.
+An ajax action is an asynchronous request that typically returns a component that updates an existing element on the page. An ajax action works a lot like standard actions, only we need to state what target element the result should end up in. To achieve this, we give the target element an ID, and we tell the ajax actions to put the result in the element by that ID.
 
 First we create the ajax action. It extracts a message parameter, calculates the number of characters in the message, and returns the result as a component.
 
@@ -494,5 +494,18 @@ When you type in the text field, ajax requests are sent to the server. The serve
 
 We are working on an implementation of WebSocket in Dance, that will allow the server to push updates the client. Eventually, there will be a simple chat example here.
 
+# Brief history
 
+The idea of Dance was borne in 2001-2002 and origins in a lot of frustration with web development at the time. We wated  object oriented and component based tools for front-end. We got CSS.
+
+Java developers journal
+
+Sun Microsystem MVC2 blueprint
+
+Modal dialogs
+
+WebManual
+
+
+# Contact
 
