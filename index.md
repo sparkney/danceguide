@@ -326,7 +326,7 @@ public class ResponsivePage extends Component{
     
     @Override
     public void render(Context context) throws Exception{
-        final Media MOBILE = new Media(0,480);
+        final Media MOBILE = new Media(0,550);
 
         Text menu = new Text("This might be a menu");
         Text content = new Text("This is some content");
