@@ -44,7 +44,7 @@ This is in comparison to classic HTML/CSS/JavaScript development.
 
 # Contribute
 
-We appreciate all kinds of comments and suggestions on how to improve the project. If you like to contribute code, you're more then welcome. Please contact the maintainer. <span style="color:lightblue">TODO: Contact information.</span>
+We appreciate all kinds of comments and suggestions on how to improve the project. If you like to contribute code, you're more then welcome. Please [contact the maintainer](#contact). 
 
 # Disclaimer
 This software is distributed under the [BSD 3-Clause License](/LICENSE.html)
