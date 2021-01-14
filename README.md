@@ -53,7 +53,7 @@ This software is distributed under the [BSD 3-Clause License](/LICENSE.html)
 A Java EE servlet 3.0 container server, like Tomcat, Jetty, GlassFish, JBoss, WebLogic, etc.
 
 # Installation
-Just download the SparkneyDance04.jar file and add it to your class path. <span style="color:lightblue">TODO: Link.</span>
+Just download the SparkneyDance04.jar file and add it to your class path. <span style="color:lightblue">Latest version will come soon. Contact maintainer for older versions..</span>
 
 # Getting started
 
